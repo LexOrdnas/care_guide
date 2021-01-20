@@ -49,14 +49,14 @@
 <section class="boot-element-bg py-md-5 py-4 mt-5">
     <div class="container position-relative py-md-5 py-0">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="col-lg-10 offset-lg-1 text-center">
                 
                 <!-- Texto -->     
-                <h2 class="font-weight-bold title-cg mb-5">Um pouco sobre a visão deste mundo.</h2> 
+                <h2 class="h1 font-weight-bold title-cg mb-5">Um pouco sobre a visão deste mundo.</h2> 
                     
                 <!-- Video -->
-                <video class="w-100" controls
-                poster="https://i.ibb.co/Y761WCP/secretaria-sbc.jpg">
+                <video class="w-100 mt-3" controls
+                poster="https://media.giphy.com/media/3oz8xHIqL4c1eOFHsQ/giphy.gif">
                     <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
                     <source src="https://archive.org/download/ElephantsDream/ed_hd.ogv" type="video/ogg">
                     <source src="https://archive.org/download/ElephantsDream/ed_hd.avi" type="video/avi">

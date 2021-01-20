@@ -76,6 +76,13 @@
             </li>
 
             <li class="nav-item">
+              <a class="nav-link h6 font-weight-bold text-white" href="./meeting.php">
+              <span class="fas fa-handshake mr-1 text-white"></span>
+                Reuniões
+              </a>
+            </li>
+
+            <li class="nav-item">
               <a class="nav-link h6 font-weight-bold text-white" href="./login.php">
               <span class="fas fa-door-open mr-2 text-white"></span>
                 Entrar

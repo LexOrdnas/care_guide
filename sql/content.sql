@@ -9,6 +9,14 @@ CREATE TABLE `user` (
   `password` varchar(32) DEFAULT NULL
 )
 
+-- Criando a tabela users adm
+CREATE TABLE `user_adm` (
+  `id_adm` integer AUTO_INCREMENT primary key NOT NULL,
+  `email_adm` varchar(40) DEFAULT NULL,
+  `password_adm` varchar(32) DEFAULT NULL,
+  `access_code` varchar(32) DEFAULT NULL
+)
+
 -- Criando tabela de posts
 CREATE TABLE `posts` (
   `id` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
@@ -20,14 +28,14 @@ CREATE TABLE `posts` (
 )
 
 -- Criando a tabela reference
-/*CREATE TABLE referencias (
-  id_ref integer AUTO_INCREMENT primary key,
-  cargo varchar(30),
-  sobre varchar(50),
-  facebook varchar(50),
-  instagram varchar(50),
-  youtube varchar(50),
-  site varchar(50),
-  autor integer,
-  FOREIGN KEY (autor) REFERENCES usuarios(id_usuario)
-)*/
+CREATE TABLE reference (
+  `id_ref` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `position` varchar(40) DEFAULT NULL,
+  `about` TEXT,
+  `facebook` varchar(40) DEFAULT NULL,
+  `instagram` varchar(40) DEFAULT NULL,
+  `youtube` varchar(40) DEFAULT NULL,
+  `site` varchar(40) DEFAULT NULL,
+  `user_adm` integer DEFAULT NULL,
+  FOREIGN KEY (user_adm) REFERENCES user_adm(id_adm)
+)

@@ -1,7 +1,52 @@
-<form action="/edit/{{id}}" method="post">
-  <p>Instituição: </p>
-  <input type="text" name="title" placeholder="{{title}}">
-  <p>Endereço: </p>
-  <input type="text" name="content" placeholder="{{content}}"></textarea><br><br>
-  <button type="submit">Confirmar</button>
-</form>
+<!-- Inicio do Espaçador -->
+<div class="medium-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<!-- Fim do Espaçador -->
+
+<div class="container pt-5 mt-5 mb-5">
+    <div class="row mt-5">
+
+        <!-- Inicio da Imagem -->
+          <div class="col-md-6 mr-5">
+            <img 
+              class="w-100 ml-5 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" 
+              src="https://i.ibb.co/0ZRp73T/edit.png"
+            >
+          </div>
+        <!-- Fim da Imagem -->
+
+        <div class="col-md-5 ml-5">
+
+            <!-- Inicio do Formulário de Edição -->
+            <form method="post" action="/edit/{{id}}">
+                
+                <!-- Titulo do Formulário -->
+                <h2 class="text-center title-cg mb-5">Edição de dados</h2>
+                
+                <!-- Campo de Usuario -->
+                <div class="form-group">
+                    <small class="text-card-cg">Nome da Instituição ou Programa</small>
+                    <input class="form-control mt-2" type="text" placeholder="{{title}}" name="title">
+                </div>
+
+                <!-- Campo de Usuario -->
+                <div class="form-group">
+                    <small class="text-card-cg">Informações de Contato</small>
+                    <input class="form-control mt-2" type="text" placeholder="{{content}}" name="content">
+                    </textarea>
+                </div>
+
+                <!-- Botão Entrar -->
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-lg btn-success mt-3" type="submit">Confirmar</button>
+                </div>
+
+            </form>
+            <!-- Fim do Formulário de Login -->
+        </div>
+
+    </div>
+</div>
+
+<!-- Inicio do Espaçador -->
+<div class="small-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<!-- Fim do Espaçador -->
