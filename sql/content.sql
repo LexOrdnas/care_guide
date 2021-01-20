@@ -41,3 +41,15 @@ CREATE TABLE reference (
   `user_adm` integer DEFAULT NULL,
   FOREIGN KEY (user_adm) REFERENCES user_adm(id_adm)
 )
+
+CREATE TABLE `users` (
+  `id_users` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(11) DEFAULT NULL,
+  `id_adm` int(11) DEFAULT NULL,
+  `email` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id_users`),
+  KEY `id` (`id`),
+  KEY `id_adm` (`id_adm`),
+  CONSTRAINT `id` FOREIGN KEY (`id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `id_adm` FOREIGN KEY (`id_adm`) REFERENCES `user_adm` (`id_adm`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;

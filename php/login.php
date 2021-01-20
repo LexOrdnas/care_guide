@@ -38,7 +38,7 @@
 
                     <!-- Botão Entrar -->
                     <div>
-                        <button class="btn btn-lg btn-success mb-5 mt-4" type="submit" name="login">Entrar</button>
+                        <button class="btn btn-lg btn-outline-success mb-5 mt-4" type="submit" name="login">Entrar</button>
                     </div>
 
                 </form>

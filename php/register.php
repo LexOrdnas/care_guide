@@ -44,7 +44,7 @@
                         
                         <!-- Botão de Cadastro -->
                         <div>
-                            <button class="btn btn-lg btn-success mb-5 mt-4" name="register" type="submit">Cadastrar</button>
+                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register" type="submit">Cadastrar</button>
                         </div>
 
                 </form>
@@ -89,7 +89,7 @@
                         
                         <!-- Botão de Cadastro -->
                         <div>
-                            <button class="btn btn-lg btn-success mb-5 mt-4" name="register_users_adm" type="submit">Cadastrar</button>
+                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register_users_adm" type="submit">Cadastrar</button>
                         </div>
 
                 </form>

@@ -7,7 +7,7 @@ session_start();
 require_once 'db_connect.php';
 
 // Se estiver recebendo uma resposta logar...
-if (isset($_POST['login_user_adm'])) {
+if (isset($_POST['login_users_adm'])) {
 
     // Pegue os valores e coloque nas variáveis X
     $email = $_POST['email_adm'];
@@ -27,6 +27,23 @@ if (isset($_POST['login_user_adm'])) {
         $select = 'SELECT * FROM user_adm
         join user
         on user.id_user = user_adm.id';
+        
+        //------------------------------------------
+
+        $select = 'SELECT * FROM request
+        join product
+        on product.id_product = request.id_product
+        join client
+        on client.id_client = request.id_client';
+
+        $result2 = $con->query($select);
+        $request = [];
+
+        while ($row = mysqli_fetch_assoc($result2)) {
+            $request[] = $row;
+
+        //-------------------------------------------
+}
 
         // mysqli_query = realiza uma consulta no BD
         // Atribuindo na variável $resultado o valor True ou False e o comando SQL

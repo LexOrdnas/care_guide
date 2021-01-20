@@ -6,12 +6,12 @@
   <div class="row">
     <div class="col-12 table-responsive">
       <table class="table table-hover">
-        <h3 class="h1 title-cg mb-5 mt-5 text-center">Instituições e Programas</h3>
+        <h3 class="h1 title-cg mb-5 mt-5 text-center">Visualização de Usuários</h3>
         <thead>
           <tr class="bg-success text-white">
             <th scope="col"></th>
-            <th scope="col">Instituição</th>
-            <th scope="col">Endereço</th>
+            <th scope="col">Usuário Comum</th>
+            <th scope="col">Usuário Administrador</th>
             <th scope="col"></th>
             <th scope="col"></th>
           </tr>
@@ -19,32 +19,32 @@
 
       <tbody>
     
-        {{#each posts}}
+        <!--{{#each posts}}-->
 
         <tr>  
           <th scope="row"></th>
 
-          <td class="text-card-cg">{{dataValues.title}}</td>
-          <td class="text-card-cg">{{dataValues.content}}</td>
+          <td class="text-card-cg"><!--{{dataValues.title}}--></td>
+          <td class="text-card-cg"><!--{{dataValues.content}}--></td>
           <td></td>
           <td>
-            <a href="/delete/{{dataValues.id}}">
+            <a href="#">
               <button class="btn btn-sm btn-danger mr-2 font-weight-bold">Deletar</button>
             </a>
             
-            <a href="/edit/{{dataValues.id}}">
+            <a href="#">
               <button class="btn btn-sm btn-info font-weight-bold">Editar</button>
             </a>  
           </td>  
         </tr>
 
-        {{/each}}
+        <!--{{/each}}-->
     
       </tbody>
       </table>
     </div>
     <div class="container d-flex justify-content-center">
-        <a href="/cad/{{dataValues.id}}">
+        <a href="#">
           <button class="btn btn-outline-success font-weight-bold">Cadastrar +</button>
         </a>
     </div>
