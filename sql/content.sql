@@ -27,6 +27,8 @@ CREATE TABLE `posts` (
   FOREIGN KEY (user) REFERENCES user(id)
 )
 
+INSERT INTO care_guide.user_adm ("email_adm", "password_adm", "access_code") VALUES ("alex@gmail.com", "123", "123");
+
 -- Criando a tabela reference
 CREATE TABLE reference (
   `id_ref` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,

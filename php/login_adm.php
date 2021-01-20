@@ -17,28 +17,33 @@
             <div class="col-md-5 ml-5 mr-5">
 
                 <!-- Inicio do Formulário de Login -->
-                <form method="POST" action="./actions/login.php">
+                <form method="POST" action="./actions/login_user_adm.php">
                     
                     <!-- Titulo do Formulário -->
-                    <h2 class="text-center title-cg mb-5">Entrar</h2>
+                    <h2 class="text-center title-cg mb-5">Entrar como ADM</h2>
                     
                     <!-- Campo de Usuario -->
                     <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Usuário" name="email">
+                        <input class="form-control" type="email" placeholder="Usuário" name="email_adm">
                     </div>
 
                     <!-- Campo de Senha -->
                     <div class="form-group">
-                        <input class="form-control" type="password" placeholder="Senha" name="password">
+                        <input class="form-control" type="password" placeholder="Código de acesso" name="access_code">
+                    </div>
+
+                    <!-- Campo de Senha -->
+                    <div class="form-group">
+                        <input class="form-control" type="password" placeholder="Senha" name="password_adm">
                         <div class="justify-content-between"> 
                             <a class="float-right mt-2 text-card-cg" href="register.php"><small>| Ainda não tem uma conta?</small></a>
-                            <a class="float-right mt-2 text-card-cg" href="login_adm.php"><small>Entrar como administrador | </small></a>
+                            <a class="float-right mt-2 text-card-cg" href="#"><small>Entrar como administrador | </small></a>
                         </div>
                     </div>
 
                     <!-- Botão Entrar -->
                     <div>
-                        <button class="btn btn-lg btn-success mb-5 mt-4" type="submit" name="login">Entrar</button>
+                        <button class="btn btn-lg btn-success mb-5 mt-4" type="submit" name="login_user_adm.php">Entrar</button>
                     </div>
 
                 </form>

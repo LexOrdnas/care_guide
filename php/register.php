@@ -35,7 +35,7 @@
                         
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Senha" 
+                            <input type="password" name="password" class="form-control input-lg" placeholder="Senha" 
                             maxlength="15" autocomplete="new-password">
                             
                             <!-- Link para a Pagina de Login -->
@@ -62,7 +62,7 @@
             <!-- Inicio do Formulário de Cadastro -->
             <div class="col-md-3 ml-5 mr-5">
 
-                <form method="POST" action="./actions/register_users.php">
+                <form method="POST" action="./actions/register_users_adm.php">
 
                     <!-- Titulo do Formulário de Cadastro -->
                     <h2 class="text-center title-cg mb-5">Cadastro de Administrador</h2>
@@ -74,13 +74,13 @@
 
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="access_code" id="password" class="form-control input-lg" placeholder="Código de acesso" 
+                            <input type="password" name="access_code" class="form-control input-lg" placeholder="Código de acesso" 
                             maxlength="15" autocomplete="new-password">
                         </div>
                         
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="password_adm" id="password" class="form-control input-lg" placeholder="Senha" 
+                            <input type="password" name="password_adm" class="form-control input-lg" placeholder="Senha" 
                             maxlength="15" autocomplete="new-password">
                             
                             <!-- Link para a Pagina de Login -->
@@ -89,7 +89,7 @@
                         
                         <!-- Botão de Cadastro -->
                         <div>
-                            <button class="btn btn-lg btn-success mb-5 mt-4" name="register" type="submit">Cadastrar</button>
+                            <button class="btn btn-lg btn-success mb-5 mt-4" name="register_users_adm" type="submit">Cadastrar</button>
                         </div>
 
                 </form>
