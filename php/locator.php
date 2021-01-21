@@ -34,7 +34,7 @@
     <!-- Fim do Mapa -->
 
     <div class="container d-flex justify-content-center">
-        <a href="join/relacao_iner_join.php">
+        <a href="./relacao_iner_join.php">
           <button class="btn btn-outline-success font-weight-bold">Cadastrar +</button>
         </a>
     </div>

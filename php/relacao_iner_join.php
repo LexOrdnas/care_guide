@@ -3,8 +3,10 @@
 	$usuario = "root"; 				// epiz_27132883
 	$senha = ""; 					// oHp69wog3MB
 	$dbname = "guia_de_cuidados"; 	// epiz_27132883_care_guide
-
+	
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+?>
+<?php
 
 	$result_cursos = "SELECT a.*, p. `description` AS project FROM `address` AS a
 		INNER JOIN `program` AS p ON a.`name_id` = p.`id`
