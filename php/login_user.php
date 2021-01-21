@@ -45,12 +45,12 @@
                         <div class="row">
                             
                             <!-- Botão de Encontrar Referências -->
-                            <a href="./php/reference.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-2 ml-3 mr-3 font-weight-bold">
+                            <a href="./testimonial.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-2 ml-3 mr-2 font-weight-bold">
                             <i class="fas fa-users fa-2x mb-3 float-center px-2"></i>
-                            <p class="h4">Encontrar <br/>Referências</p></button></a>
+                            <p class="h4">Encontrar <br/>Depoimentos</p></button></a>
 
                             <!-- Botão de Localizar Projetos -->
-                            <a href="./php/locator.php"><button type="button" class="btn btn-outline-success p-4 mt-2 ml-3 px-2 mr-3 font-weight-bold">
+                            <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 mt-2 ml-3 px-2 mr-2 font-weight-bold">
                             <i class="fas fa-map fa-2x mb-3 float-center px-2"></i>
                             <p class="h4 px-1">Localizar <br/>Projetos</p></button></a>
 
@@ -60,12 +60,12 @@
                             <p class="h4">Instituições e<br/>Programas</p></button></a>
 
                             <!-- Botão de Instituições e Programas -->
-                            <a href="http://localhost:3333"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
+                            <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
                             <i class="fas fa-handshake fa-2x mb-3 float-center px-2"></i>
                             <p class="h4">Agendamento de<br/>Reuniões</p></button></a>
 
                             <!-- Botão de Instituições e Programas -->
-                            <a href="http://localhost:3333"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
+                            <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
                             <i class="fas fa-user-edit fa-2x mb-3 float-center px-2"></i>
                             <p class="h4">Sua jorna<br/>personalizada</p></button></a>
                             

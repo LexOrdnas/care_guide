@@ -17,7 +17,7 @@
             <div class="col-md-5 ml-5 mr-5">
 
                 <!-- Inicio do Formulário de Login -->
-                <form method="POST" action="./actions/login.php">
+                <form method="POST" action="./actions/login_user.php">
                     
                     <!-- Titulo do Formulário -->
                     <h2 class="text-center title-cg mb-5">Entrar</h2>

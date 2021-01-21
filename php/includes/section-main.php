@@ -11,10 +11,10 @@
                     <div class="row justify-content-initial">
 
                         <!-- Botão para a pagina de referencias -->
-                        <a href="./php/reference.php">
+                        <a href="./php/testimonial.php">
                         <button type="button" class="btn btn-outline-success p-3 mr-3 ml-3 font-weight-bold">
                         <i class="fas fa-users fa-2x mb-3 float-center px-2"></i>
-                        <p class="h4">Encontrar <br/>Referências</p>
+                        <p class="h4">Encontrar <br/>Depoimentos</p>
                         </button></a>
 
                         <!-- Botão para a pagina de Localizar Projetos -->

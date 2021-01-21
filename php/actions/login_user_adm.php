@@ -10,18 +10,18 @@ require_once 'db_connect.php';
 if (isset($_POST['login_users_adm'])) {
 
     // Pegue os valores e coloque nas variáveis X
-    $email = $_POST['email_adm'];
+    $email_adm = $_POST['email_adm'];
     $access_code = $_POST['access_code'];
-    $password = $_POST['password_adm'];
+    $password_adm = $_POST['password_adm'];
 
     // strlen = Retorna o tamanho de uma String
     // Se o tamanho da String for maior que 0...
-    if (strlen($email) > 0 && strlen($password) > 0) {
+    //if (strlen($email) > 0 && strlen($password) > 0) {
 
         // Atribuindo na variável $sql o comando = 
         // "Selecione todos os elementos da tabela X,
         //  enquanto o que estiver dentro da variável X for igual a X".
-        $sql = "SELECT * FROM user_adm WHERE email_adm = '$email' AND password = '$password' LIMIT 1;";
+        $sql = "SELECT * FROM user_adm WHERE email_adm = '$email_adm' AND password = '$password_adm' LIMIT 1;";
 
         // Inserção do JOIN em USER de duas tabelas: Posts e User_adm
         $select = 'SELECT * FROM user_adm
@@ -30,7 +30,7 @@ if (isset($_POST['login_users_adm'])) {
         
         //------------------------------------------
 
-        $select = 'SELECT * FROM request
+        /*$select = 'SELECT * FROM request
         join product
         on product.id_product = request.id_product
         join client
@@ -38,19 +38,19 @@ if (isset($_POST['login_users_adm'])) {
 
         $result2 = $con->query($select);
         $request = [];
-
+        */
         while ($row = mysqli_fetch_assoc($result2)) {
             $request[] = $row;
-
+        
         //-------------------------------------------
 }
 
         // mysqli_query = realiza uma consulta no BD
         // Atribuindo na variável $resultado o valor True ou False e o comando SQL
-        $result = mysqli_query($connect, $sql);
+        $result2 = mysqli_query($connect, $sql);
 
         // Atribuindo na variável $row o comando SQL da variável $resultado
-        while ($row = mysqli_fetch_assoc($result)) {
+        while ($row = mysqli_fetch_assoc($result2)) {
 
             // Validando se existe um ID dentro da variável $row
             if ($row['id_adm']) {
@@ -62,10 +62,11 @@ if (isset($_POST['login_users_adm'])) {
                 $_SESSION['email_adm'] = $row['email_adm'];
 
                 // Redirecionar para o local X após a execução de todas as ações anteriores
-                header("Location: ../login_user.php");
+                //header("Location: ../login_user.php");
+                echo "<script>location.href = '../login_user.php' </script>";
             }
         }
-    }
+    //}
 }
 
 ?> 

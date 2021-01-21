@@ -18,7 +18,7 @@
             <!-- Inicio do Formulário de Cadastro -->
             <div class="col-md-3 ml-5 mr-5">
 
-                <form method="POST" action="./actions/register_users.php">
+                <form method="POST" action="./actions/register_user.php">
 
                     <!-- Titulo do Formulário de Cadastro -->
                     <h2 class="text-center title-cg mb-5">Cadastro de Usuário</h2>
@@ -62,7 +62,7 @@
             <!-- Inicio do Formulário de Cadastro -->
             <div class="col-md-3 ml-5 mr-5">
 
-                <form method="POST" action="./actions/register_users_adm.php">
+                <form method="POST" action="./actions/register_user_adm.php">
 
                     <!-- Titulo do Formulário de Cadastro -->
                     <h2 class="text-center title-cg mb-5">Cadastro de Administrador</h2>
@@ -89,7 +89,7 @@
                         
                         <!-- Botão de Cadastro -->
                         <div>
-                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register_users_adm" type="submit">Cadastrar</button>
+                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register_adm" type="submit">Cadastrar</button>
                         </div>
 
                 </form>

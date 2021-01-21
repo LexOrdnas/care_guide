@@ -102,7 +102,7 @@
     // Senão faça isso...
     } else {
         // Redirecionar para o local X após a execução de todas as ações anteriores
-        header("Location: ../login_user_adm.php");
+        header("Location: ../login_adm.php");
     }
 
 ?>

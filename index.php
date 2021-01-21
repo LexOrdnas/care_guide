@@ -55,9 +55,9 @@
           <ul class="navbar-nav col-12 justify-content-end">
 
             <li class="nav-item">
-              <a class="nav-link h6 font-weight-bold text-white" href="./php/reference.php">
+              <a class="nav-link h6 font-weight-bold text-white" href="./php/testimonial.php">
               <span class="fas fa-users mr-1 text-white"></span>
-                Referencias
+                Depoimentos
               </a>
             </li>
 

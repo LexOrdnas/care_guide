@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Guia de Cuidados - MVP</title>
+    <title>Guia de Cuidados</title>
     <meta name="description" content="MVP Básico de projeto da Recode Pro 2020">
     <meta name="keywords" content="MVP Básico, Recode Pro 2020">
     <meta name="author" content="Squad 9 - SP2">
@@ -62,9 +62,9 @@
           <ul class="navbar-nav col-12 justify-content-end">
 
           <li class="nav-item">
-              <a class="nav-link h6 font-weight-bold text-white" href="./reference.php">
+              <a class="nav-link h6 font-weight-bold text-white" href="./testimonial.php">
               <span class="fas fa-users mr-1 text-white"></span>
-                Referencias
+                Depoimentos
               </a>
             </li>
 

@@ -20,7 +20,7 @@
                 hoje faço palestras sobre como conseguir superar este problema.</p>
 
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -38,7 +38,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>
@@ -65,7 +65,7 @@
                 palestras sobre como lidar com a dependência das drogas.</p>
               
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -83,7 +83,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>
@@ -110,7 +110,7 @@
                 Gostaria de me compartilhar sua dor?</p>
 
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -128,7 +128,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>
@@ -154,7 +154,7 @@
               <p class="card-text">Olá! Superei o vício e hoje sou voluntário na ONG Acreditar que trata de dependentes químicos.</p>
 
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -172,7 +172,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>
@@ -199,7 +199,7 @@
                 hoje faço palestras sobre como conseguir superar este problema.</p>
 
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -217,7 +217,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>
@@ -244,7 +244,7 @@
                 comecei a realizar palestras sobre como lidar com a dependência das drogas.</p>
 
               <!-- Inicio de Ícones -->
-              <ul class="list-inline">
+              <!--<ul class="list-inline">
 
                 <li class="list-inline-item">
                   <a href="https://www.facebook.com/ProgMohamedN" target="_blank" class="fa fa-facebook link-cg"></a>
@@ -262,7 +262,7 @@
                   <a href="https://www.youtube.com/" target="_blank" class="fa fa-youtube link-cg"></a>
                 </li>
 
-              </ul>
+              </ul>-->
               <!-- Fim de Ícones -->
 
             </div>

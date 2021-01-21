@@ -14,6 +14,7 @@
         $content = $_POST['content'];
         $whatsapp = $_POST['whatsapp'];
         $id = $_SESSION['id'];
+        //$id_adm = $_SESSION['id_adm'];
 
         // Atribuindo na variável $sql o comando SQL X
         // Comando: Insira na tabela posts os valores X que estão nas variáveis X
