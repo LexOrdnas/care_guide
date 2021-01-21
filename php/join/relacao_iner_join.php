@@ -1,8 +1,8 @@
 <?php
-	$servidor = "localhost";
-	$usuario = "root";
-	$senha = "";
-	$dbname = "guia_de_cuidados";
+	$servidor = "localhost";  // sql213.epizy.com
+	$usuario = "root"; // epiz_27132883
+	$senha = ""; // oHp69wog3MB
+	$dbname = "guia_de_cuidados"; // epiz_27132883_care_guide
 
 	//Criar a conexao
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
