@@ -1,3 +1,13 @@
+---------------------------------------------------------------------
+-- INSERT
+INSERT INTO table ( col1, col2 ) VALUES ('val1', 'val2');
+-- SELECT
+SELECT * FROM table WHERE col1 = 'val1' AND col2 = 'val2';
+-- UPDATE
+UPDATE table SET col1 = 'val1', col2 = 'val2' WHERE col3 = 'val1';
+-- DELETE
+DELETE FROM table WHERE col1 = 'val1';
+
 --CREATE DATABASE care_guide;
 --USE care_guide
 
@@ -102,3 +112,5 @@ INSERT INTO `address` (`id`, `description`, `name_id`) VALUES
 (2, 'Rua do Samba, nº 55', 1),
 (3, 'Rua Macuaba, nº 54', 2),
 (4, 'Rua Jorge, nº 54', 2);
+
+--------------------------------------------------------------------
