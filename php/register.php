@@ -84,7 +84,7 @@
                             maxlength="15" autocomplete="new-password">
                             
                             <!-- Link para a Pagina de Login -->
-                            <a class="float-right mt-2 text-card-cg" href="login.php">Já possui uma conta ?</a>
+                            <a class="float-right mt-2 text-card-cg" href="login_adm.php">Já possui uma conta ?</a>
                         </div>
                         
                         <!-- Botão de Cadastro -->

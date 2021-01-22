@@ -16,7 +16,7 @@
         $id = $_SESSION['id'];
 
         // Atribuindo na variável $sql o comando correspondente...
-        $sql = "SELECT * FROM posts WHERE user = $id;";
+        $sql = "SELECT * FROM user = $id;";
 
         // Atribuindo na variável $resultado o comando executado que estava
         // na variável $sql na conexão onde está o BD
@@ -37,10 +37,10 @@
             <!-- Inicio da Sessão de Entrada -->
             <div class="container">
                 <div class="row pt-5">
-                    <div class="col-md-6">
+                    <div class="col-md-6 title-cg">
                         
-                        <p class="h1 title-cg font-weight-bold">Seja bem-vindo,</p>
-                        <p class="h1 mb-4 title-cg font-weight-bold">o que deseja fazer?</p>
+                        <p class="h1 font-weight-bold">Seja bem-vindo,</p>
+                        <p class="h1 mb-4 font-weight-bold">o que deseja fazer?</p>
                         
                         <div class="row">
                             
@@ -53,22 +53,7 @@
                             <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 mt-2 ml-3 px-2 mr-2 font-weight-bold">
                             <i class="fas fa-map fa-2x mb-3 float-center px-2"></i>
                             <p class="h4 px-1">Localizar <br/>Projetos</p></button></a>
-
-                            <!-- Botão de Instituições e Programas -->
-                            <a href="http://localhost:3333"><button type="button" class="btn btn-outline-success p-4 px-2 mt-2 ml-3 font-weight-bold">
-                            <i class="fas fa-warehouse fa-2x mb-3 float-center px-2"></i>
-                            <p class="h4">Instituições e<br/>Programas</p></button></a>
-
-                            <!-- Botão de Instituições e Programas -->
-                            <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
-                            <i class="fas fa-handshake fa-2x mb-3 float-center px-2"></i>
-                            <p class="h4">Agendamento de<br/>Reuniões</p></button></a>
-
-                            <!-- Botão de Instituições e Programas -->
-                            <a href="./locator.php"><button type="button" class="btn btn-outline-success p-4 px-2 mt-4 ml-3 font-weight-bold">
-                            <i class="fas fa-user-edit fa-2x mb-3 float-center px-2"></i>
-                            <p class="h4">Sua jorna<br/>personalizada</p></button></a>
-                            
+                                
                         </div>
                     </div>
 

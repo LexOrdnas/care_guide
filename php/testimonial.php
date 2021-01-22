@@ -13,10 +13,10 @@
     <section>
         <div class="container pt-5">
             <div class="row py-4">
-                <div class="col-md-6">
-                    <p class="h1 font-weight-bold title-cg mb-3">Encontre Pessoas e grupos em São Bernardo do Campo !</p>
+                <div class="col-md-6 title-cg">
+                    <p class="h1 font-weight-bold mb-3">Encontre Pessoas e grupos em São Bernardo do Campo !</p>
                     <div class="justify-content-initial">
-                        <p class="h5 text-cg">Encontre depoimentos, palestras, artigos e muito mais de 
+                        <p class="h5">Encontre depoimentos, palestras, artigos e muito mais de 
                                 pessoas que já passaram pelo que desafio de largar as drogas.</p>
                     </div><!-- Sessão da Imagem -->
             <div class="col-md-6 justify-content-center">

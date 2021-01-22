@@ -27,16 +27,6 @@ CREATE TABLE `user_adm` (
   `access_code` varchar(32) DEFAULT NULL
 );
 
--- Criando tabela de posts
-CREATE TABLE `posts` (
-  `id` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
-  `title` varchar(100) DEFAULT NULL,
-  `content` TEXT,
-  `whatsapp` integer NULL,
-  `user` integer DEFAULT NULL,
-  FOREIGN KEY (user) REFERENCES user(id)
-);
-
 INSERT INTO user_adm (email_adm, password_adm, access_code) VALUES ("alex@gmail.com", "123", "123");
 
 -- Criando a tabela reference
@@ -114,3 +104,14 @@ INSERT INTO `address` (`id`, `description`, `name_id`) VALUES
 (4, 'Rua Jorge, nº 54', 2);
 
 --------------------------------------------------------------------
+
+-- Ainda não está em uso
+-- Criando tabela de posts
+CREATE TABLE `posts` (
+  `id` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `title` varchar(100) DEFAULT NULL,
+  `content` TEXT,
+  `whatsapp` integer NULL,
+  `user` integer DEFAULT NULL,
+  FOREIGN KEY (user) REFERENCES user(id)
+);

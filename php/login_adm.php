@@ -47,7 +47,7 @@
 
                     <!-- Botão Entrar -->
                     <div>
-                        <button class="btn-lg btn btn-outline-success mb-5 mt-4" type="submit" name="login_user_adm.php">Entrar</button>
+                        <button class="btn-lg btn btn-outline-success mb-5 mt-4" type="submit" name="login_adm">Entrar</button>
                     </div>
 
                 </form>
