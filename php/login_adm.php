@@ -5,18 +5,18 @@
 <!-- Fim do Cabeçalho -->
 
 <!-- Inicio do Espaçador -->
-<div class="long-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
 <!-- Inicio do Conteúdo Principal -->
 <main>
     
     <!-- Inicio da Sessão de Login -->
-    <div class="container py-5 mt-5 mb-5">
-        <div class="row py-5">
+    <div class="container py-5 mt-5 mb-lg-5">
+        <div class="row pt-5 d-flex justify-content-center">
             <!-- Inicio da Imagem -->
-            <div class="col-md-6">
-                <img class="w-100 ml-5 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" src="https://i.ibb.co/F6dB64f/admin.png">
+            <div class="col-md-6 col-lg-6">
+                <img class="w-100 ml-5 d-none d-lg-block" src="https://i.ibb.co/F6dB64f/admin.png">
             </div>
             <!-- Fim da Imagem -->
             <div class="col-md-5 ml-5 mr-5">
@@ -29,7 +29,7 @@
                     
                     <!-- Campo de Usuario -->
                     <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Usuário" name="email_adm">
+                        <input class="form-control" type="email" placeholder="E-mail" name="email_adm">
                     </div>
 
                     <!-- Campo de Senha -->
@@ -63,7 +63,7 @@
 <!-- Fim do Conteúdo Principal -->
 
 <!-- Inicio do Espaçador -->
-<div class="long-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
 <!-- Inicio do Rodapé -->

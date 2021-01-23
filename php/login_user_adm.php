@@ -40,17 +40,17 @@
     <section>
 
             <!-- Inicio da Sessão de Entrada -->
-            <div class="container">
-                <div class="row pt-5">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row pt-6">
                     <div class="col-md-6 title-cg">
                         
                         <p class="h1 font-weight-bold">Seja bem-vindo,
-                            <?php $row = $result -> fetch_assoc() ?>
-                                <small>
-                                    <?php echo $row['email_adm']; ?>
-                                </small>
+                            <?php 
+                                $row = $result -> fetch_assoc();
+                                echo $_SESSION['user_name']; 
+                            ?>
                         </p>
-                        <p class="h1 mb-4 font-weight-bold">o que deseja fazer?</p>
+                        <p class="h1 mb-5 font-weight-bold">o que deseja fazer?</p>
                         
                         <div class="row">
                             
@@ -84,9 +84,9 @@
                     </div>
 
                     <!-- Imagem -->
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <!-- Inicio da Imagem da Sessão -->
-                        <img class="w-75 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" 
+                        <img class="w-100 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" 
                         src="https://media.giphy.com/media/5xaOcLIrV8MOnVxEABa/giphy.gif">
                         <!-- Fim da Imagem da Sessão -->
                     </div>

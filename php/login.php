@@ -17,9 +17,9 @@
     </div>
 
         <!-- Inicio da Sessão de Login -->
-    <div class="container py-5 mt-5 mb-5">
+    <div class="container py-5 mt-5 d-flex justify-content-center">
         <div class="row py-5">
-            <div class="col-md-5 ml-5 mr-5">
+            <div class="col-md-10 col-lg-5 ml-5 mr-5">
 
                 <!-- Inicio do Formulário de Login -->
                 <form method="POST" action="./actions/login_user.php">
@@ -29,7 +29,7 @@
                     
                     <!-- Campo de Usuario -->
                     <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Usuário" name="email">
+                        <input class="form-control" type="email" placeholder="E-mail" name="email">
                     </div>
 
                     <!-- Campo de Senha -->
@@ -55,7 +55,7 @@
 
             <!-- Inicio da Imagem -->
             <div class="col-md-6">
-                <img class="w-100 ml-5 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" src="https://i.ibb.co/frYhSK7/Login-re-4vu2.png">
+                <img class="w-100 ml-5 d-none d-lg-block" src="https://i.ibb.co/frYhSK7/Login-re-4vu2.png">
             </div>
             <!-- Fim da Imagem -->
             

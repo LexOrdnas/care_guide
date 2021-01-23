@@ -7,27 +7,28 @@ SELECT * FROM table WHERE col1 = 'val1' AND col2 = 'val2';
 UPDATE table SET col1 = 'val1', col2 = 'val2' WHERE col3 = 'val1';
 -- DELETE
 DELETE FROM table WHERE col1 = 'val1';
+------------------------------------------------------------------------------------------------------------
 
---CREATE DATABASE care_guide;
---USE care_guide
+CREATE DATABASE care_guide;
+USE care_guide
 
 -- Criando a tabela users
 CREATE TABLE `user` (
   `id` integer AUTO_INCREMENT primary key NOT NULL,
-  `name` varchar(30) DEFAULT NULL,
+  `first_name` varchar(30) DEFAULT NULL,
+  `nickname` varchar(30) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
   `password` varchar(32) DEFAULT NULL
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Criando a tabela users adm
 CREATE TABLE `user_adm` (
   `id_adm` integer AUTO_INCREMENT primary key NOT NULL,
+  `user_name` varchar(30) DEFAULT NULL,
   `email_adm` varchar(40) DEFAULT NULL,
   `password_adm` varchar(32) DEFAULT NULL,
   `access_code` varchar(32) DEFAULT NULL
-);
-
-INSERT INTO user_adm (email_adm, password_adm, access_code) VALUES ("alex@gmail.com", "123", "123");
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Criando a tabela reference
 CREATE TABLE `reference` (
@@ -40,7 +41,7 @@ CREATE TABLE `reference` (
   `site` varchar(40) DEFAULT NULL,
   `user_adm` integer DEFAULT NULL,
   FOREIGN KEY (user_adm) REFERENCES user_adm(id_adm)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 CREATE TABLE `users` (
   `id_users` int(11) NOT NULL AUTO_INCREMENT,
@@ -54,28 +55,6 @@ CREATE TABLE `users` (
   CONSTRAINT `id_adm` FOREIGN KEY (`id_adm`) REFERENCES `user_adm` (`id_adm`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
-DROP TABLE IF EXISTS `instprog`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `instprog` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `title` varchar(255) DEFAULT NULL,
-  `content` text DEFAULT NULL,
-  `createdAt` datetime NOT NULL,
-  `updatedAt` datetime NOT NULL,
-  `user_id` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
--- Criando a tabela users
-CREATE TABLE `user` (
-  `id` integer AUTO_INCREMENT primary key NOT NULL,
-  `name` varchar(30) DEFAULT NULL,
-  `email` varchar(40) DEFAULT NULL,
-  `password` varchar(32) DEFAULT NULL
-);
-
 -------------------------------------------
 
 CREATE DATABASE guia_de_cuidados;
@@ -84,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `program` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `description` varchar(220) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 INSERT INTO `program` (`id`, `description`) VALUES
 (1, 'Amor Exigente'),
@@ -95,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `address` (
   `description` varchar(220) NOT NULL,
   `name_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 INSERT INTO `address` (`id`, `description`, `name_id`) VALUES
 (1, 'Rua do Amor Azul, nº 55', 1),
@@ -114,4 +93,11 @@ CREATE TABLE `posts` (
   `whatsapp` integer NULL,
   `user` integer DEFAULT NULL,
   FOREIGN KEY (user) REFERENCES user(id)
-);
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+-- Criando tabela de posts
+CREATE TABLE `data` (
+  `id` integer PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `location` varchar(100) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;

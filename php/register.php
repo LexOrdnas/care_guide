@@ -5,18 +5,18 @@
 <!-- Fim do Cabeçalho -->
 
 <!-- Inicio do Espaçador -->
-<div class="long-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
 <!-- Inicio do Conteúdo Principal -->
 <main>
     <!-- Inicio da Sessão de Cadastro -->
-    <div class="container-fluid py-5 mt-4">
+    <div class="container-fluid py-5 mt-5">
 
-        <div class="row d-flex py-5 justify-content-around">
+        <div class="row d-flex py-5 mt-5 justify-content-around">
 
             <!-- Inicio do Formulário de Cadastro -->
-            <div class="col-md-3 ml-5 mr-5">
+            <div class="col-md-4 col-lg-3 ml-lg-5 ">
 
                 <form method="POST" action="./actions/register_user.php">
 
@@ -25,12 +25,17 @@
                         
                         <!-- Campo de Nome-->
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control input-lg" placeholder="Nome completo" maxlength="30">
+                            <input type="text" name="first_name" class="form-control input-lg" placeholder="Primeiro nome" maxlength="30">
+                        </div>
+
+                        <!-- Campo de Nome-->
+                        <div class="form-group">
+                            <input type="text" name="nickname" class="form-control input-lg" placeholder="Sobrenome" maxlength="30">
                         </div>
                         
                         <!-- Campo de Usuario -->
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control input-lg" placeholder="Usuário" maxlength="40">
+                            <input type="email" name="email" class="form-control input-lg" placeholder="E-mail" maxlength="40">
                         </div>
                         
                         <!-- Campo de Senha -->
@@ -53,14 +58,14 @@
             <!-- Fim do Formulário de Cadastro -->
             
             <!-- Inicio da Imagem da Sessão -->
-            <div class="col-md-3 justify-content-center">
-                <img class="w-75 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block" 
+            <div class="col-md-3 d-none d-lg-block justify-content-center">
+                <img class="w-75" 
                 src="https://media.giphy.com/media/lNG8ZbSxsj9QcNikGJ/giphy.gif">
             </div>
                 <!-- Fim da Imagem da Sessão -->
 
             <!-- Inicio do Formulário de Cadastro -->
-            <div class="col-md-3 ml-5 mr-5">
+            <div class="col-md-4 col-lg-3 mr-lg-5">
 
                 <form method="POST" action="./actions/register_user_adm.php">
 
@@ -69,7 +74,12 @@
                         
                         <!-- Campo de Usuario -->
                         <div class="form-group">
-                            <input type="email" name="email_adm" class="form-control input-lg" placeholder="Usuário" maxlength="40">
+                            <input type="text" name="user_name" class="form-control input-lg" placeholder="Nome de usuário" maxlength="40">
+                        </div>
+
+                        <!-- Campo de Usuario -->
+                        <div class="form-group">
+                            <input type="email" name="email_adm" class="form-control input-lg" placeholder="E-mail" maxlength="40">
                         </div>
 
                         <!-- Campo de Senha -->
@@ -82,7 +92,7 @@
                         <div class="form-group">
                             <input type="password" name="password_adm" class="form-control input-lg" placeholder="Senha" 
                             maxlength="15" autocomplete="new-password">
-                            
+                                
                             <!-- Link para a Pagina de Login -->
                             <a class="float-right mt-2 text-card-cg" href="login_adm.php">Já possui uma conta ?</a>
                         </div>
@@ -105,7 +115,7 @@
 <!-- Fim do Conteúdo Principal -->
 
 <!-- Inicio do Espaçador -->
-<div class="long-spacing d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
+<div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
 <!-- Inicio do Rodapé -->

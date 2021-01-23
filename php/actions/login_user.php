@@ -35,7 +35,8 @@ if (isset($_POST['login'])) {
                 // $_SESSION = Um array associativo contendo variáveis de 
                 // sessão disponíveis para o atual script.
                 $_SESSION['id'] = $row['id'];
-                $_SESSION['name'] = $row['name'];
+                $_SESSION['first_name'] = $row['first_name'];
+                $_SESSION['nickname'] = $row['nickname'];
                 $_SESSION['email'] = $row['email'];
 
                 // Redirecionar para o local X após a execução de todas as ações anteriores

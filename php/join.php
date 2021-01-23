@@ -10,10 +10,10 @@
 <!-- Fim do Espaçador -->
 
 <?php
-	$servidor = "localhost";  		// sql213.epizy.com
-	$usuario = "root"; 				// epiz_27132883
-	$senha = ""; 					// oHp69wog3MB
-	$dbname = "guia_de_cuidados"; 	// epiz_27132883_care_guide
+	$servidor = "localhost";
+	$usuario = "root";
+	$senha = "";
+	$dbname = "guia_de_cuidados"; // epiz_27132883_guia_de_cuidados
 	
 	$conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
 ?>
@@ -34,22 +34,24 @@
         <div class="row py-5">
             <div class="col-md-10 ml-5 mr-5">
 				<h2 class="title-cg mb-5">Instituições e programa cadastrados</h2>
-				<table class="table">
-					<thead>
-						<tr>
-							<th class="text-cg">Nomes</th>
-							<th class="text-cg">Endereços</th>
-							<th class="text-cg" colspan="2"></th>
-						</tr>
-					</thead>
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th class="text-cg">Nomes</th>
+								<th class="text-cg">Endereços</th>
+								<th class="text-cg" colspan="2"></th>
+							</tr>
+						</thead>
 
-					<?php while ( $rows_cursos = $resultado_cursos -> fetch_assoc() ) : ?>
-					<tr>
-						<td class="text-card-cg"> <?php echo $rows_cursos['project']; ?></td>
-						<td class="text-card-cg"> <?php echo $rows_cursos['description']; ?></td>
-					</tr>
-					<?php endwhile; ?>
-				</table>
+						<?php while ( $rows_cursos = $resultado_cursos -> fetch_assoc() ) : ?>
+						<tr>
+							<td class="text-card-cg"> <?php echo $rows_cursos['project']; ?></td>
+							<td class="text-card-cg"> <?php echo $rows_cursos['description']; ?></td>
+						</tr>
+						<?php endwhile; ?>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>

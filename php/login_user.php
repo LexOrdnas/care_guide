@@ -24,6 +24,11 @@
 
 ?>
 
+<?php
+    $mysqli = new mysqli('localhost', 'root', '', 'care_guide') or die(mysqli_error($mysqli));
+    $result = $mysqli -> query("SELECT * FROM user") or die($mysqli -> error);       
+?>
+
 <!-- Inicio do COnteúdo -->
 <main>
 
@@ -39,7 +44,12 @@
                 <div class="row pt-5">
                     <div class="col-md-6 title-cg">
                         
-                        <p class="h1 font-weight-bold">Seja bem-vindo,</p>
+                        <p class="h1 font-weight-bold">Seja bem-vindo,
+                            <?php 
+                                $row = $result -> fetch_assoc();
+                                echo $_SESSION['first_name'];
+                            ?>
+                        </p>
                         <p class="h1 mb-4 font-weight-bold">o que deseja fazer?</p>
                         
                         <div class="row">

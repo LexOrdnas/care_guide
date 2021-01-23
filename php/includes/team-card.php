@@ -159,6 +159,12 @@
                     </div>
                     <!-- Inicio do Card 04 -->
 
+                    
+
+                </div>
+
+                <div class="col-md-6 d-none d-md-block d-lg-none">
+                    <img class="w-100" src="https://i.ibb.co/q5yxB98/social-ideas.png">
                 </div>
 
             </div>

@@ -1,22 +1,22 @@
-<section class="members bg-cg">
+<section>
 
     <div class="container">
       <div class="row">
 
         <!-- Inicio do Card 01 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/LJd63ps/img1.png" alt="Card Imagem">
             
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Vinícius Rezende</h4>
-              <p class="card-text font-weight-bold">Influenciador Digital na Recover</p>
-              <p class="card-text">Olá! Sou Vinícius Rezende e sou ex-dependente, 
+              <h4 class="card-title text-center text-justify">Vinícius Rezende</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Influenciador Digital na Recover</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Sou Vinícius Rezende e sou ex-dependente, 
                 hoje faço palestras sobre como conseguir superar este problema.</p>
 
               <!-- Inicio de Ícones -->
@@ -50,18 +50,18 @@
 
         <!-- Inicio do Card 02 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card text-center">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/VJrRgPD/img2.png" width="150" alt="Card Imagem">
 
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Raul Oliveira</h4>
-              <p class="card-text font-weight-bold">Gerente Comercial</p>
-              <p class="card-text">Olá! Após perder meu filho para as drogas, comecei a realizar 
+              <h4 class="card-title text-center text-justify">Raul Oliveira</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Gerente Comercial</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Após perder meu filho para as drogas, comecei a realizar 
                 palestras sobre como lidar com a dependência das drogas.</p>
 
             </div>
@@ -73,18 +73,18 @@
 
         <!-- Inicio do Card 03 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card text-center">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/6bf6WkC/img3.png" alt="Card Imagem">
 
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Luciana Barbosa</h4>
-              <p class="card-text font-weight-bold">Psicóloga</p>
-              <p class="card-text">Olá! Fui dependente química durante quase 10 anos e hoje sou especialista em tratamento de vícios. 
+              <h4 class="card-title text-center text-justify">Luciana Barbosa</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Psicóloga</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Fui dependente química durante quase 10 anos e hoje sou especialista em tratamento de vícios. 
                 Gostaria de me compartilhar sua dor?</p>
 
             </div>
@@ -96,18 +96,18 @@
 
         <!-- Inicio do Card 04 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card text-center">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/K2wt0cF/img4.png" alt="Card Imagem">
 
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Lucas Caldeira</h4>
-              <p class="card-text font-weight-bold">Assistente Administrativo</p>
-              <p class="card-text">Olá! Superei o vício e hoje sou voluntário na ONG Acreditar que trata de dependentes químicos.</p>
+              <h4 class="card-title text-center text-justify">Lucas Caldeira</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Assistente Administrativo</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Superei o vício e hoje sou voluntário na ONG Acreditar que trata de dependentes químicos.</p>
 
             </div>
             <!-- Fim do Corpo do Card -->
@@ -118,18 +118,18 @@
 
         <!-- Inicio do Card 05 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card text-center">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/qk8wKkg/img5.png" alt="Card Imagem">
 
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Vinicius Rezende</h4>
-              <p class="card-text font-weight-bold">Influenciador Digital na Recover</p>
-              <p class="card-text">Olá! Sou Vinicius Rezende e sou ex-dependente, 
+              <h4 class="card-title text-center text-justify">Vinicius Rezende</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Influenciador Digital na Recover</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Sou Vinicius Rezende e sou ex-dependente, 
                 hoje faço palestras sobre como conseguir superar este problema.</p>
 
             </div>
@@ -141,18 +141,18 @@
 
         <!-- Inicio do Card 06 -->
         <div class="col-md-6 col-lg-4 mb-3">
-          <div class="card text-center member">
+          <div class="card text-center">
 
             <!-- Imagem -->
             <img class="card-img-top" src="https://i.ibb.co/kJFwtGT/img6.png" width="150" alt="Card Imagem">
 
             <!-- Inicio do Corpo do Card -->
-            <div class="card-body">
+            <div class="container pt-3">
 
               <!-- Texto -->
-              <h4 class="card-title">Raul Oliveira</h4>
-              <p class="card-text font-weight-bold">Gerente Comercial</p>
-              <p class="card-text">Olá! Após perder meu filho para as drogas, 
+              <h4 class="card-title text-center text-justify">Raul Oliveira</h4>
+              <p class="card-text text-center font-weight-bold text-justify">Gerente Comercial</p>
+              <p class="card-text text-center text-justify pb-4">Olá! Após perder meu filho para as drogas, 
                 comecei a realizar palestras sobre como lidar com a dependência das drogas.</p>
 
             </div>

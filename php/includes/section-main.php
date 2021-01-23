@@ -8,21 +8,23 @@
                     <p class="h1 font-weight-bold">Seja bem-vindo,</p>
                     <p class="h1 mb-5 font-weight-bold">o que deseja fazer?</p>
                     
-                    <div class="row justify-content-initial">
+                    <div class="row">
 
                         <!-- Botão para a pagina de referencias -->
-                        <a href="./php/testimonial.php">
-                        <button type="button" class="btn btn-outline-success p-3 mr-3 ml-3 font-weight-bold">
-                        <i class="fas fa-users fa-2x mb-3 float-center px-2"></i>
-                        <p class="h4">Encontrar <br/>Depoimentos</p>
-                        </button></a>
 
+                            <a href="./php/testimonial.php" 
+                                class="btn btn-outline-success py-4 px-3 mr-2 ml-3 font-weight-bold">
+                            <i class="fas fa-users fa-2x mb-2 float-center px-2"></i>
+                            <p class="h5">Encontrar <br/>Depoimentos</p>
+                            </a>
+                    
                         <!-- Botão para a pagina de Localizar Projetos -->
-                        <a href="./php/locator.php"><button type="button" class="btn btn-outline-success p-3 px-2 font-weight-bold">
-                        <i class="fas fa-map fa-2x mb-3 float-center px-2"></i>
-                        <p class="h4 px-1">Localizar <br/>Projetos</p>
-                        </button></a>
-                        
+                            <a href="./php/locator.php"
+                                class="btn btn-outline-success py-4 px-4 font-weight-bold">
+                            <i class="fas fa-map fa-2x mb-2 float-center px-2"></i>
+                            <p class="h5 px-1">Localizar <br/>Projetos</p>
+                            </a>
+
                         <!-- Texto -->
                         <p class="h5 mt-3 ml-3" style="color: #BDBDBD;">Encontre referencias de pessoas que 
                             superaram suas maiores dificuldades, ou procure instituições e 

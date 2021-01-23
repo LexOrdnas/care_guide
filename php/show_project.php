@@ -118,7 +118,7 @@
         </div>
         
     <div class="col-md-6 ml-5 mr-5">
-          <table class="table">
+          <table class="table table-responsive">
             <thead>
               <tr>
                 <th class="text-cg">Instituição ou programa</th>

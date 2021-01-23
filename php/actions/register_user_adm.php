@@ -7,12 +7,13 @@
     if (isset($_POST['register_adm'])) {
 
         // Pegue os valores e coloque nas variáveis X
+        $user_name = $_POST['user_name'];
         $email = $_POST['email_adm'];
-        $access_code = $_POST['access_code'];
         $password = $_POST['password_adm'];
+        $access_code = $_POST['access_code'];
 
         // Atribuindo na variável $sql o comando = Inserir na tabela usuarios os valores...
-        $sql = "INSERT INTO user_adm VALUES (null, '$email', '$access_code', '$password');";
+        $sql = "INSERT INTO user_adm VALUES (null, '$user_name', '$email', '$password', '$access_code');";
 
         // Executando o comando que está na variável $sql na conexão onde está o BD
         mysqli_query($connect, $sql);
