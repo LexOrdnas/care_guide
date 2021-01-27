@@ -50,10 +50,12 @@ Nosso projeto foca em auxiliar na prevenção e combate às drogas fazendo a med
 
 ## 📑 Lista de Funcionalidades:
 
-- [X] Login/ Cadastro de Usuário;
+- [x] Login/ Cadastro de Usuário;
+- [x] Login/ Cadastro de Administrador;
 - [x] Cadastro de Instituições ou Programas;
+- [x] Mural de depoimentos inseridos por usuarios;
+- [x] Tabela de visualização de Intituições, programas e seus endereços;
 - [ ] Mapeamento de Instituições ou Programas na região de SBC;
-- [ ] Mural de depoimentos inseridos por usuarios;
 
 ***
 
@@ -95,6 +97,7 @@ Links da estrutura da aplicação feita no **Figma**:
 [Versão Desktop](https://www.figma.com/file/7LUOpPzB5mfTXoxwiBbWZX/CaraGuide-Desktop?node-id=2%3A20)
 
 [Versão de Visualização do Mobile](https://www.figma.com/proto/CO1nDqEm5Mjz5NbJw7GAnG/CareGuide-Mobile?node-id=6%3A68&viewport=867%2C-688%2C0.8031579852104187&scaling=scale-down) |
+[Versão de Visualização do Tablet](https://www.figma.com/file/fLwqnIXsoT7yhmD38di0cs/CareGuide-Tablet?node-id=0%3A1) |
 [Versão de Visualização do Desktop](https://www.figma.com/proto/7LUOpPzB5mfTXoxwiBbWZX/CaraGuide-Desktop?node-id=2%3A20&viewport=553%2C-1128%2C0.8349320292472839&scaling=scale-down)
 
 ***
@@ -104,8 +107,6 @@ Links da estrutura da aplicação feita no **Figma**:
 ## Integrantes:
 
 * 👨🏽‍🦱 **Alexsandro Marques** - [Email](lexordnas@outlook.com) - [Github](https://github.com/LexOrdnas) - (11) 969526115
-
-* 🧑🏻 **Arthur Ribeiro** - [Email](artur.almeida.ribeiro@outlook.com) - [Github](https://github.com/arturalmeidaribeiro) - (11) 93425-5199
 
 * 👨🏻 **Marcos Junior** - [Email](marcossilva8428@gmail.com) - [Github](https://github.com/marcossilva8428) - (11) 94244-5744
 
