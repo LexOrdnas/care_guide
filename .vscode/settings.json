@@ -5,5 +5,6 @@
         "usuarios",
         "whatsapp",
         "youtube"
-    ]
+    ],
+    "phpserver.port": 3333
 }

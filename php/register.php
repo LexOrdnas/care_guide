@@ -1,14 +1,16 @@
-<!-- Inicio do Cabeçalho -->
 <header>
-    <?php include_once('includes/header.php'); ?>
+    <?php 
+        include_once('includes/header.php');
+
+        require_once 'actions/usuarios.php';
+	    $u = new Usuario;
+     ?>
 </header>
-<!-- Fim do Cabeçalho -->
 
 <!-- Inicio do Espaçador -->
 <div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
-<!-- Inicio do Conteúdo Principal -->
 <main>
     <!-- Inicio da Sessão de Cadastro -->
     <div class="container-fluid py-5 mt-5">
@@ -18,38 +20,73 @@
             <!-- Inicio do Formulário de Cadastro -->
             <div class="col-md-4 col-lg-3 ml-lg-5 ">
 
-                <form method="POST" action="./actions/register_user.php">
+                <form method="POST">
 
                     <!-- Titulo do Formulário de Cadastro -->
                     <h2 class="text-center title-cg mb-5">Cadastro de Usuário</h2>
                         
                         <!-- Campo de Nome-->
                         <div class="form-group">
-                            <input type="text" name="first_name" class="form-control input-lg" placeholder="Primeiro nome" maxlength="30">
+                            <input 
+                                type="text" 
+                                name="nome" 
+                                class="form-control input-lg" 
+                                placeholder="Primeiro nome" 
+                                maxlength="30"
+                            >
                         </div>
 
-                        <!-- Campo de Nome-->
+                        <!-- Campo Telefone -->
                         <div class="form-group">
-                            <input type="text" name="nickname" class="form-control input-lg" placeholder="Sobrenome" maxlength="30">
+                            <input 
+                                type="text" 
+                                name="telefone" 
+                                class="form-control input-lg" 
+                                placeholder="Telefone" 
+                                maxlength="30"
+                            >
                         </div>
                         
                         <!-- Campo de Usuario -->
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control input-lg" placeholder="E-mail" maxlength="40">
+                            <input 
+                                type="email" 
+                                name="email" 
+                                class="form-control input-lg" 
+                                placeholder="E-mail" 
+                                maxlength="40"
+                            >
+                        </div>
+
+                        <!-- Campo de Nome-->
+                        <div class="form-group">
+                            <input 
+                                type="password" 
+                                name="senha" 
+                                class="form-control input-lg" 
+                                placeholder="Senha" 
+                                maxlength="30"
+                            >
                         </div>
                         
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control input-lg" placeholder="Senha" 
-                            maxlength="15" autocomplete="new-password">
-                            
+                            <input 
+                                type="password" 
+                                name="confSenha" 
+                                class="form-control input-lg" 
+                                placeholder="Confirmar Senha" 
+                                maxlength="15" 
+                                autocomplete="new-password"
+                            >
                             <!-- Link para a Pagina de Login -->
                             <a class="float-right mt-2 text-card-cg" href="login.php">Já possui uma conta ?</a>
                         </div>
                         
-                        <!-- Botão de Cadastro -->
                         <div>
-                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register" type="submit">Cadastrar</button>
+                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" type="submit">
+                                Cadastrar
+                            </button>
                         </div>
 
                 </form>
@@ -74,32 +111,56 @@
                         
                         <!-- Campo de Usuario -->
                         <div class="form-group">
-                            <input type="text" name="user_name" class="form-control input-lg" placeholder="Nome de usuário" maxlength="40">
+                            <input 
+                                type="text" 
+                                name="user_name" 
+                                class="form-control input-lg" 
+                                placeholder="Nome de usuário" 
+                                maxlength="40"
+                            >
                         </div>
 
                         <!-- Campo de Usuario -->
                         <div class="form-group">
-                            <input type="email" name="email_adm" class="form-control input-lg" placeholder="E-mail" maxlength="40">
+                            <input 
+                                type="email" 
+                                name="email_adm" 
+                                class="form-control input-lg" 
+                                placeholder="E-mail" 
+                                maxlength="40"
+                            >
                         </div>
 
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="access_code" class="form-control input-lg" placeholder="Código de acesso" 
-                            maxlength="15" autocomplete="new-password">
+                            <input 
+                                type="password" 
+                                name="access_code" 
+                                class="form-control input-lg" 
+                                placeholder="Código de acesso" 
+                                maxlength="15" 
+                                autocomplete="new-password"
+                            >
                         </div>
                         
                         <!-- Campo de Senha -->
                         <div class="form-group">
-                            <input type="password" name="password_adm" class="form-control input-lg" placeholder="Senha" 
-                            maxlength="15" autocomplete="new-password">
-                                
-                            <!-- Link para a Pagina de Login -->
+                            <input 
+                                type="password" 
+                                name="password_adm" 
+                                class="form-control input-lg" 
+                                placeholder="Senha" 
+                                maxlength="15" 
+                                autocomplete="new-password"
+                            >
+  
                             <a class="float-right mt-2 text-card-cg" href="login_adm.php">Já possui uma conta ?</a>
                         </div>
-                        
-                        <!-- Botão de Cadastro -->
+    
                         <div>
-                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register_adm" type="submit">Cadastrar</button>
+                            <button class="btn-lg btn btn-outline-success mb-5 mt-4" name="register_adm" type="submit">
+                                Cadastrar
+                            </button>
                         </div>
 
                 </form>
@@ -111,15 +172,68 @@
     </div>
     <!-- Fim da Sessão de Cadastro -->
 
+    <?php
+    //verificar se clicou no botao
+    if (isset($_POST['nome'])) {
+        $nome = addslashes($_POST['nome']); //addslashes evita codigos maliciosos.
+        $telefone = addslashes($_POST['telefone']);
+        $email = addslashes($_POST['email']);
+        $senha = addslashes($_POST['senha']);
+        $confirmarSenha = addslashes( $_POST['confSenha']);
+        //verificando se todos os campos nao estao vazios
+        if (!empty($nome) && !empty($telefone) && !empty($email) && !empty($senha) && !empty($confirmarSenha)) {
+            $u -> conectar(
+                "projeto_login",
+                "localhost",
+                "root",
+                ""
+            );
+
+            if ($u -> msgErro == "") { //conectado normalmente;
+                if ($senha == $confirmarSenha) {
+                    if ($u -> cadastrar($nome, $telefone, $email, $senha)) {
+                        ?>
+                        <div id='msg_sucesso'>
+                            Cadastrado com sucesso!
+                        </div>
+                        <?php
+                    } else {
+                        ?>
+                        <div class="msg_erro">
+                            Email já cadastrado, retorne e faça login.
+                        </div>
+                        <?php
+                    }
+                } else {
+                    ?>
+                    <div class="msg_erro">
+                        Senhas não conferem!
+                    </div>
+                    <?php
+                }
+            } else {
+                ?>
+                <div class="msg_erro">
+                    <?php echo "Erro: ".$u -> msgErro;?>
+                </div>
+                <?php
+                }
+            } else {
+                ?>
+                <div class="msg_erro">
+                    Preencha todos os campos!
+                </div>
+                <?php
+            }
+    }
+?>
+
 </main>
-<!-- Fim do Conteúdo Principal -->
 
 <!-- Inicio do Espaçador -->
 <div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
-<!-- Inicio do Rodapé -->
 <footer>
     <?php include_once('includes/footer.php'); ?>
 </footer>
-<!-- Fim do Rodapé -->

@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Guia de Cuidados</title>
+    <title>Cuide.se</title>
     <meta name="description" content="MVP Básico de projeto da Recode Pro 2020">
     <meta name="keywords" content="MVP Básico, Recode Pro 2020">
     <meta name="author" content="Squad 9 - SP2">
@@ -47,7 +47,7 @@
       
       <!-- Inicio da Logo -->
       <a class="navbar-brand font-weight-bold text-white ml-5" href="./../index.php">
-        Guia de Cuidados
+        Cuide.se
       </a>
       <!-- Fim da Logo -->
 
@@ -77,12 +77,19 @@
               </a>
             </li>
 
-            <!--<li class="nav-item">
-              <a class="nav-link h6 font-weight-bold text-white" href="./meeting.php">
-              <span class="fas fa-handshake mr-1 text-white"></span>
-                Reuniões
+            <li class="nav-item">
+              <a class="nav-link h6 font-weight-bold text-white" href="./content.php">
+              <span class="fas fa-th-large mr-1 text-white"></span>
+                Conteúdo
               </a>
-            </li> -->
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link h6 font-weight-bold text-white" href="./about.php">
+              <span class="fas fa-hand-holding-heart mr-1 text-white"></span>
+                Sobre nós
+              </a>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link h6 font-weight-bold text-white" href="./login.php">

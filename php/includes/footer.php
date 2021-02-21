@@ -49,7 +49,7 @@
     <div class=" py-1 my-0 sticky-bottom bg-menu-cg">
         <p class="text-center pt-2">
             <small id="passwordHelpInline" class="text-white h6">
-            © 2020 Copyright: Guia de Cuidados <a>Recode Pro 2020</a></small>
+            © 2020 Copyright: Cuide.se <a>Recode Pro 2020</a></small>
         </p>
     </div>
      <!-- Copyright -->

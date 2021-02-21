@@ -1,32 +1,19 @@
 <?php 
-    
-    // Requirindo o arquio...
-    require_once "./actions/db_connect.php";
-
-    // Iniciar Sessão
     session_start();
-
-    // Se estiver recebendo uma resposta id...
-    if (isset($_SESSION['id']) && $_SESSION['id'] <> "") {
-
+    if (!isset($_SESSION['id_usuario'])) {  //se não está definido o id do usuario na sessao
+        header("Location: login.php");
+        exit; //die() 
+      }
+   
         // Incluindo o documento x
         include_once "./includes/header.php";
-
+        
         // Atribuindo na variável $id o que estiver na variável id dentro da $_SESSION
-        $id = $_SESSION['id'];
+        $id = $_SESSION['id_usuario'];
 
         // Atribuindo na variável $sql o comando correspondente...
-        $sql = "SELECT * FROM user = $id;";
+        $sql = "SELECT * FROM usuarios = $id;";
 
-        // Atribuindo na variável $resultado o comando executado que estava
-        // na variável $sql na conexão onde está o BD
-        $result = mysqli_query($connect, $sql);
-
-?>
-
-<?php
-    $mysqli = new mysqli('localhost', 'root', '', 'care_guide') or die(mysqli_error($mysqli));
-    $result = $mysqli -> query("SELECT * FROM user") or die($mysqli -> error);       
 ?>
 
 <!-- Inicio do COnteúdo -->
@@ -44,11 +31,7 @@
                 <div class="row pt-5">
                     <div class="col-md-6 title-cg">
                         
-                        <p class="h1 font-weight-bold">Seja bem-vindo,
-                            <?php 
-                                $row = $result -> fetch_assoc();
-                                echo $_SESSION['first_name'];
-                            ?>
+                        <p class="h1 font-weight-bold">Seja bem-vindo
                         </p>
                         <p class="h1 mb-4 font-weight-bold">o que deseja fazer?</p>
                         
@@ -95,9 +78,9 @@
     include_once "./includes/footer.php";
 
     // Senão faça isso...
-    } else {
+    //} else {
         // Redirecionar para o local X após a execução de todas as ações anteriores
-        header("Location: ../login.php");
-    }
+        //header("Location: ../login.php");
+    //}
 
 ?>

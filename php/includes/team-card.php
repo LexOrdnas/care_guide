@@ -11,6 +11,7 @@
 
                     <div class="card mb-3">
                         <div class="container text-center mt-4">
+                            <img class="mb-2" src="https://i.ibb.co/3Yrw6cm/alex.png" style="border-radius: 50px;" height="100px" alt="">
                             <h4 class="card-title title-card-cg">Alexsandro Marques</h4>
 
                             <p class="card-text text-card-cg">Desenvolvedor/ Designer</p>
@@ -48,6 +49,7 @@
                     <!-- Inicio do Card 02 -->
                     <div class="card">
                         <div class="container text-center mt-4">
+                            <img class="mb-2" src="https://i.ibb.co/3B4r6L4/marcos.png" style="border-radius: 50px;" height="100px" alt="">
                             <h4 class="card-title title-card-cg">Marcos Junior</h4>
 
                             <p class="card-text text-card-cg">Gerente de Projetos</p>
@@ -88,6 +90,7 @@
 
                     <div class="card mb-3">
                         <div class="container text-center mt-4">
+                        <img class="mb-2" src="https://i.ibb.co/TmdxRtF/marcia.png" style="border-radius: 50px;" height="100px" alt="">
                             <h4 class="card-title title-card-cg">Márcia Santos</h4>
 
                             <p class="card-text text-card-cg">Designer/ Desenvolvedora</p>
@@ -125,6 +128,7 @@
                     <!-- Inicio do Card 04 -->
                     <div class="card">
                         <div class="container text-center mt-4">
+                            <img class="mb-2" src="https://i.ibb.co/548bR2D/mayra.png" style="border-radius: 50px;" height="100px" alt="">
                             <h4 class="card-title title-card-cg">Mayra Almeida</h4>
 
                             <p class="card-text text-card-cg">Desenvolvedora</p>

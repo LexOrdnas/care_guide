@@ -1,3 +1,22 @@
+CREATE TABLE usuarios ( 
+id_usuario int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+nome varchar(30) DEFAULT NULL, 
+telefone varchar(30) DEFAULT NULL, 
+email varchar(40) DEFAULT NULL, 
+senha varchar(32) DEFAULT NULL )
+ENGINE=InnoDB DEFAULT CHARSET=utf8
+
+---------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id_usuario` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(30) NOT NULL,
+  `telefone` varchar(30) NOT NULL,
+  `email` varchar(40) NOT NULL,
+  `senha` varchar(30) NOT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
 ---------------------------------------------------------------------
 -- INSERT
 INSERT INTO table ( col1, col2 ) VALUES ('val1', 'val2');
@@ -13,13 +32,13 @@ CREATE DATABASE care_guide;
 USE care_guide
 
 -- Criando a tabela users
-CREATE TABLE `user` (
-  `id` integer AUTO_INCREMENT primary key NOT NULL,
-  `first_name` varchar(30) DEFAULT NULL,
-  `nickname` varchar(30) DEFAULT NULL,
-  `email` varchar(40) DEFAULT NULL,
-  `password` varchar(32) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+--CREATE TABLE `user` (
+--  `id` integer AUTO_INCREMENT primary key NOT NULL,
+--  `first_name` varchar(30) DEFAULT NULL,
+--  `nickname` varchar(30) DEFAULT NULL,
+--  `email` varchar(40) DEFAULT NULL,
+--  `password` varchar(32) DEFAULT NULL
+--) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- Criando a tabela users adm
 CREATE TABLE `user_adm` (

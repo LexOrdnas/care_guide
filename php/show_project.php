@@ -3,7 +3,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Guia de Cuidados</title>
+    <title>Cuide.se</title>
     <meta name="description" content="MVP Básico de projeto da Recode Pro 2020">
     <meta name="keywords" content="MVP Básico, Recode Pro 2020">
     <meta name="author" content="Squad 9 - SP2">
