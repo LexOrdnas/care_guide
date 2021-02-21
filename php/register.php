@@ -193,21 +193,21 @@
                 if ($senha == $confirmarSenha) {
                     if ($u -> cadastrar($nome, $telefone, $email, $senha)) {
                         ?>
-                        <div id='msg_sucesso'>
-                            Cadastrado com sucesso!
+                        <div class="alert alert-success text-center mx-5" role="alert">
+                            <strong>Cadastrado com sucesso!</strong>
                         </div>
                         <?php
                     } else {
                         ?>
-                        <div class="msg_erro">
-                            Email já cadastrado, retorne e faça login.
+                        <div class="alert alert-warning text-center mx-5" role="alert">
+                            <strong>Email já cadastrado,</strong> retorne e faça login.
                         </div>
                         <?php
                     }
                 } else {
                     ?>
-                    <div class="msg_erro">
-                        Senhas não conferem!
+                    <div class="alert alert-danger text-center mx-5" role="alert">
+                        <strong>Senhas não conferem!</strong>
                     </div>
                     <?php
                 }
@@ -220,8 +220,8 @@
                 }
             } else {
                 ?>
-                <div class="msg_erro">
-                    Preencha todos os campos!
+                <div class="alert alert-warning text-center mx-5" role="alert">
+                    <strong>Preencha todos os campos!</strong>
                 </div>
                 <?php
             }

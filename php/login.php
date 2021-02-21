@@ -84,9 +84,9 @@
                             echo "<script> window.location.href='login_user.php' </script>";
 					} else {
 						?>
-						<div class="msg_erro">
-							Email e/ou senha estão incorretos!
-						</div>
+                        <div class="alert alert-danger text-center mx-5" role="alert">
+                            <strong>Email e/ou senha estão incorretos!</strong>
+                        </div>
 						<?php
 					}
 				} else {
@@ -98,9 +98,9 @@
 				}
 			} else {
 			?>
-				<div class="msg_erro">
-					Preencha todos os campos!
-				</div>
+                <div class="alert alert-danger text-center mx-5" role="alert">
+                    <strong>Preencha todos os campos!</strong>
+                </div>
 				<?php
 			}
 		}
