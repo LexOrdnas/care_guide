@@ -37,7 +37,7 @@
 		  global $pdo;
       	global $msgErro;
   		/*verificar se o email e senha estao cadastrados, se sim*/
-  		$sql = $pdo -> prepare("SELECT id_usuario FROM usuarios WHERE email = :e AND senha = :s");
+  		$sql = $pdo -> prepare("SELECT id_usuario, nome, email FROM usuarios WHERE email = :e AND senha = :s");
   		$sql -> bindValue(":e", $email);
   		$sql -> bindValue(":s", $senha);
   		$sql -> execute();
@@ -45,7 +45,9 @@
 			//entrar no sistema criando uma (sessao)
 			$dado = $sql -> fetch(); //transforma o retorno da query em array com os nomes das colunas
 			session_start();  //iniciando a sessao
-  			$_SESSION['id_usuario'] = $dado['id_usuario']; //armazena o id do usuario na sessao.
+			$_SESSION['id_usuario'] = $dado['id_usuario']; //armazena o id do usuario na sessao.
+			$_SESSION['nome'] = $dado['nome'];
+			$_SESSION['email'] = $dado['email'];
   			return true;  //logado com sucesso
   		} else {
   			return false; //erro ao logar.

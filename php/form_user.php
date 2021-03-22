@@ -1,14 +1,8 @@
 <?php 
-
-    // Iniciar Sessão
     session_start();
 
-    // Se estiver recebendo uma resposta id...
     if (isset($_SESSION['id'])) {
-
-        // Incluindo o documento X
         include_once "./includes/header.php";
-
 ?>
 
 <!-- Inicio do Espaçador -->
@@ -42,7 +36,9 @@
                     
                     <!-- Botão Salvar -->
                     <div>
-                        <button class="btn btn-lg btn-success mb-5 mt-4" type="submit" name="comment">Salvar</button>
+                        <button class="btn btn-lg btn-success mb-5 mt-4" type="submit" name="comment">
+                            Salvar
+                        </button>
                     </div>
                 </form>
 
@@ -59,16 +55,9 @@
 <!-- Fim do Espaçador -->
 
 <?php
-    
-    // Incluindo o documento x
     include_once "./includes/footer.php";
 
-    // Senão faça isso...
     } else {
-
-        // Redirecionar para o local X após a execução de todas as ações anteriores
         header("Location: login.php");
-
     }
-
 ?>

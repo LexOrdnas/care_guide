@@ -70,7 +70,7 @@
   </header>
   <!-- Fim do Cabeçalho -->
 
-  <?php
+  <?php      // 'sql213.epizy.com', 'epiz_27132883', 'oHp69wog3MB', 'epiz_27132883_care_guide'
     $mysqli = new mysqli('localhost', 'root', '', 'crud') or die(mysqli_error($mysqli));
     $result = $mysqli -> query("SELECT * FROM data") or die($mysqli -> error);       
   ?>
@@ -80,37 +80,52 @@
   <!-- Fim do Espaçador -->
 
     <div class="container-fluid py-5 mt-4">
-
       <div class="row d-flex py-5 justify-content-around">
-
         <div class="col-md-3 ml-5 mr-5">
-
           <form action=""  method="post">
-
             <input type="hidden" name="id" value="<?php echo $id; ?>">
 
             <div class="form-group">
-              
               <h2 class="title-cg mb-3">Cadastro de Instituições</h2>
         
-              <input type="text" name="name" class="form-control text-card-cg mb-3" value="<?php echo $name; ?>"placeholder="Instituição ou Programa">
+              <input 
+                type="text" 
+                name="name" 
+                class="form-control text-card-cg mb-3" 
+                value="<?php echo $name; ?>"
+                placeholder="Instituição ou Programa"
+              >
             </div>
 
             <div class="form-group">
-              
-              <input type="text" name="location" class="form-control text-card-cg" value="<?php echo $location; ?>" placeholder="Endereço">
+              <input 
+                type="text" 
+                name="location" 
+                class="form-control text-card-cg" 
+                value="<?php echo $location; ?>" 
+                placeholder="Endereço"
+              >
             </div>
 
             <div class="form-group">
-
             <?php
               if ($update == true) :
             ?>
-                <button type="submit" class="btn btn-info" name="update">Atualizar</button>
+                <button 
+                  type="submit" 
+                  class="btn btn-info" 
+                  name="update">
+                    Atualizar
+                </button>
 
               <?php else : ?>
 
-                <button type="submit" class="btn btn-outline-success btn-lg" name="save">Salvar</button>
+                <button 
+                  type="submit" 
+                  class="btn btn-outline-success btn-lg" 
+                  name="save">
+                    Salvar
+                </button>
 
               <?php endif; ?>
             </div>
@@ -127,15 +142,22 @@
               </tr>
             </thead>
 
-
             <?php
             while ($row = $result->fetch_assoc()) : ?>
               <tr>
                 <td class="text-card-cg"> <?php echo $row['name']; ?></td>
                 <td class="text-card-cg"> <?php echo $row['location']; ?></td>
                 <td>
-                  <a href="show_project.php?edit=<?php echo $row['id']; ?>" class="btn btn-outline-info mr-2">Edit</a>
-                  <a href="show_project.php?delete=<?php echo $row['id']; ?>" class="btn btn-outline-danger">Delete</a>
+                  <a 
+                    href="show_project.php?edit=<?php echo $row['id']; ?>" 
+                    class="btn btn-outline-info mr-2">
+                      Edit
+                  </a>
+                  <a 
+                    href="show_project.php?delete=<?php echo $row['id']; ?>" 
+                    class="btn btn-outline-danger">
+                      Delete
+                  </a>
                 </td>
               </tr>
             <?php endwhile; ?>
@@ -144,17 +166,10 @@
     </div>
   </div>
 
-  <!-- Inicio do Espaçador -->
   <div class="small-spacing mt-2 d-sm-none d-md-block d-none d-sm-block d-md-none d-lg-block"></div>
-  <!-- Fim do Espaçador -->
 
-    <!-- Inicio do Rodapé -->
     <footer>
         <?php include_once('includes/footer.php'); ?>
     </footer>
-    <!-- Fim do Rodapé -->
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  
 </body>
 </html>

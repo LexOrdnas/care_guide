@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html lang="pt-br">
 <head>
@@ -6,15 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Cuide.se</title>
   <meta name="description" content="MVP Básico de projeto da Recode Pro 2020">
-  <meta name="keywords" content="MVP Básico, Recode Pro 2020">
+  <meta name="keywords" content="MVP - Cuide.se, Recode Pro 2020">
   <meta name="author" content="Squad 9 - SP2">
   <!-- Ícone do Site -->
   <link rel="shortcut icon" href="https://i.ibb.co/Sn5qHr2/plus.png" type="image/png">
-  <!-- Fonte Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Titillium+Web&display=swap" 
-  rel="stylesheet">
-  <!-- CSS Principal -->
+   <!-- CSS Principal -->
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
   integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
@@ -38,15 +37,22 @@
     <nav class="navbar navbar-expand-lg fixed-top bg-menu-cg shadow-sm p-3 mb-5">
       
       <!-- Inicio da Logo -->
-      <a class="navbar-brand font-weight-bold text-white ml-5" href="./index.php"> 
-        Cuide.se
+      <a class="navbar-brand font-weight-bold text-white ml-5" href="./index.php">
+        <img src="https://i.ibb.co/GFQ71x4/Whats-App-Image-2021-02-21-at-16-36-19.jpg" height="30px" alt="Cuide.se">
       </a>
       <!-- Fim da Logo -->
 
         <!-- Inicio do Botão Navbar-Toggler que aparece para versões de Tablet e mobile -->
-        <button class="navbar-toggler text-light" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" 
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="fas fa-bars"></span>
+        <button 
+          class="navbar-toggler text-light" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarTogglerDemo03" 
+          aria-controls="navbarTogglerDemo03" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+        <span class="fas fa-bars"></span>
         </button>
         <!-- Fim do Botão Navbar-Toggler que aparece para versões de Tablet e mobile -->
 
@@ -82,19 +88,22 @@
               </a>
             </li>
 
+            <?php if(!isset($_SESSION['id_usuario'])) { ?>
             <li class="nav-item">
-                <a class="nav-link h6 font-weight-bold text-white" href="./php/login.php">
-                <span class="fas fa-door-open mr-1 text-white"></span>
-                  Entrar
-                </a>
+              <a class="nav-link h6 font-weight-bold text-white" href="./php/login.php">
+              <span class="fas fa-door-open mr-2 text-white"></span>
+                Entrar
+              </a>
             </li>
-
+            <?php } ?>
+            <?php if(isset($_SESSION['id_usuario'])) { ?>
             <li class="nav-item">
-                <a class="nav-link h6 font-weight-bold text-white" href="./actions/exit.php">
-                <span class="fas fa-door-closed mr-1 text-white"></span>
-                  Sair  
-                </a>
+              <a class="nav-link h6 font-weight-bold text-white" href="./php/actions/exit.php">
+              <span class="fas fa-door-closed mr-2 text-white"></span>
+                Sair
+              </a>
             </li>
+            <?php } ?>
 
           </ul>
         </div>

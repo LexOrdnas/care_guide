@@ -1,8 +1,6 @@
-<!-- Inicio do Cabeçalho -->
 <header>
     <?php include_once('./includes/header.php'); ?>
 </header>
-<!-- Fim do Cabeçalho -->
 
 <!-- Inicio do Espaçador -->
 <div class="long-spacing d-none d-lg-block"></div>
@@ -34,20 +32,35 @@
 
                     <!-- Campo de Senha -->
                     <div class="form-group">
-                        <input class="form-control" type="password" placeholder="Código de acesso" name="access_code">
+                        <input 
+                            class="form-control" 
+                            type="password" 
+                            placeholder="Código de acesso" 
+                            name="access_code">
                     </div>
 
                     <!-- Campo de Senha -->
                     <div class="form-group">
-                        <input class="form-control" type="password" placeholder="Senha" name="password_adm">
+                        <input 
+                            class="form-control" 
+                            type="password" 
+                            placeholder="Senha" 
+                            name="password_adm">
                         <div class="justify-content-between"> 
-                            <a class="float-right mt-2 text-card-cg" href="register.php"><small> Ainda não tem uma conta?</small></a>
+                            <a class="float-right mt-2 text-card-cg" href="register.php">
+                                <small> Ainda não tem uma conta?</small>
+                            </a>
                         </div>
                     </div>
 
                     <!-- Botão Entrar -->
                     <div>
-                        <button class="btn-lg btn btn-outline-success mb-5 mt-4" type="submit" name="login_adm">Entrar</button>
+                        <button 
+                            class="btn-lg btn btn-outline-success mb-5 mt-4" 
+                            type="submit" 
+                            name="login_adm">
+                                Entrar
+                        </button>
                     </div>
 
                 </form>
@@ -66,8 +79,5 @@
 <div class="long-spacing d-none d-lg-block"></div>
 <!-- Fim do Espaçador -->
 
-<!-- Inicio do Rodapé -->
-<footer>
-    <?php include_once('./includes/footer.php'); ?>
-</footer>
-<!-- Fim do Rodapé -->
+
+<?php include_once('./includes/footer.php'); ?>

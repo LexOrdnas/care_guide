@@ -30,7 +30,8 @@ L.marker([-23.7099839, -46.5538248])
 .bindPopup(popup);
 
 L.marker([-23.7071933, -46.5515241]).addTo(map);
-
+//L.marker([-23.7084841, -46.5554545]).addTo(map);
+/*
 $('.counter-count').each(function () {
     $(this).prop('Counter',0).animate({
         Counter: $(this).text()
@@ -120,4 +121,4 @@ var main = function () {
      });
 };
 
-$(document).ready(main);
+$(document).ready(main);*/

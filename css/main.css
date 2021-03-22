@@ -53,6 +53,7 @@
 
 /*Texto*/
 .title-cg {
+    font-family: 'Montserrat', sans-serif;
     color: #23C75A;
     font-weight: bolder;
 }
@@ -207,7 +208,7 @@
   
   .footer-right p,
   .footer_middle p {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     color: #BDBDBD;
   }
@@ -239,7 +240,7 @@
   }
   
   .footer_middle h4, .footer-right h4 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     color: #BDBDBD;
   }
@@ -252,7 +253,7 @@
   }
   
   .footer-right h4, .footer-left h4 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     margin-bottom: 10px;
   }
@@ -272,7 +273,7 @@
     font-size: 16px;
     line-height: 18px;
     height: 18px;
-    font-family: raleway;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     opacity: 1;
     display: block;
@@ -284,7 +285,7 @@
   }
   
   .emailsignup {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin-left: 15px;
     height: 50px;
@@ -298,7 +299,7 @@
   }
   
   .trustlogos {
-    content: url(https://www.authenticireland.com/wp-content/uploads/2018/04/TopTrust1.png);
+    content: url(https://i.ibb.co/p0ttTYH/fun.png);
     margin: 10px auto;
     max-width: 100%;
   }
@@ -310,7 +311,7 @@
   }
   
   .footer_trust_top p {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: #BDBDBD;
@@ -343,5 +344,3 @@
     margin: 10px auto;
     max-width: 100%;
   }
-
-  

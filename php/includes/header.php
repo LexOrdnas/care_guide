@@ -47,7 +47,7 @@
       
       <!-- Inicio da Logo -->
       <a class="navbar-brand font-weight-bold text-white ml-5" href="./../index.php">
-        Cuide.se
+        <img src="https://i.ibb.co/GFQ71x4/Whats-App-Image-2021-02-21-at-16-36-19.jpg" height="30px" alt="Cuide.se">
       </a>
       <!-- Fim da Logo -->
 
@@ -90,21 +90,22 @@
                 Sobre nós
               </a>
             </li>
-
+            <?php if(!isset($_SESSION['id_usuario'])) { ?>
             <li class="nav-item">
               <a class="nav-link h6 font-weight-bold text-white" href="./login.php">
               <span class="fas fa-door-open mr-2 text-white"></span>
                 Entrar
               </a>
             </li>
-
+            <?php } ?>
+            <?php if(isset($_SESSION['id_usuario'])) { ?>
             <li class="nav-item">
               <a class="nav-link h6 font-weight-bold text-white" href="./actions/exit.php">
               <span class="fas fa-door-closed mr-2 text-white"></span>
                 Sair
               </a>
             </li>
-
+            <?php } ?>
           </ul>
         </div>
         <!-- Fim de Links do Menu -->

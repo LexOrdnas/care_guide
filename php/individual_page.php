@@ -1,6 +1,6 @@
 <!-- Inicio do Cabeçalho -->
 <header>
-    <?php include_once('includes/header.php'); ?>
+    <?php session_start(); include_once('includes/header.php'); ?>
 </header>
 <!-- Fim do Cabeçalho -->
 
@@ -56,16 +56,29 @@
                     
                     <div class="row float-left">
                         
-                        <button type="button" class="btn btn-outline-success p-4 px-2 ml-2 mt-3 font-weight-bold">
+                        <button 
+                            type="button" 
+                            class="btn btn-outline-success p-4 px-2 ml-2 mt-3 font-weight-bold">
                             <i class="far fa-clock fa-2x mb-3 mr-3 float-left px-2"></i>
-                            <p class="h4 float-left">Segunda á Sexta<br/>8H ás 18H</p></button>
+                            <p class="h4 float-left">
+                                Segunda á Sexta<br/>8H ás 18H
+                            </p>
+                        </button>
                         
-                        <button type="button" class="btn btn-outline-success p-4 p mt-3 ml-2 font-weight-bold">
+                        <button 
+                            type="button" 
+                            class="btn btn-outline-success p-4 p mt-3 ml-2 font-weight-bold">
                             <i class="fas fa-exclamation fa-2x mb-3 mr-3 float-left px-2"></i>
-                            <p class="h4 float-left">Não atendemos<br/>fim de semana</p></button>
+                            <p class="h4 float-left">
+                                Não atendemos<br/>fim de semana
+                            </p>
+                        </button>
                         
                         <a href="https://www.google.com.br/maps/place/Secretaria+da+Sa%C3%BAde+de+S%C3%A3o+Bernardo+do+Campo/@-23.7072111,-46.5509592,17z/data=!4m5!3m4!1s0x94ce42299f078989:0xdabfc5ffe8a524b6!8m2!3d-23.707216!4d-46.5487705?hl=pt-BR">
-                        <img class="w-25 mt-2" src="https://i.ibb.co/wJNySVM/google-maps.png" title="Ver rotas no Google Maps">
+                        <img 
+                            class="w-25 mt-2" 
+                            src="https://i.ibb.co/wJNySVM/google-maps.png" 
+                            title="Ver rotas no Google Maps">
                         </a>
 
                     </div>
@@ -87,8 +100,5 @@
 <div class="medium-spacing"></div>
 <!-- Fim do Espaçador -->
 
-<!-- Inicio do Rodapé -->
-<footer>
-    <?php include_once('includes/footer.php'); ?>
-</footer>
-<!-- Fim do Rodapé -->
+<?php include_once('includes/footer.php'); ?>
+

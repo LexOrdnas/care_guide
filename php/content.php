@@ -1,6 +1,7 @@
 <!-- Inicio do Cabeçalho -->
 <?php 
         //include('includes/header.php');
+        session_start();
         require_once 'actions/usuarios.php';
         $u = new Usuario;
     ?>
@@ -47,11 +48,20 @@
 		
 			<div class="col-lg-4">
 				<div class="card card-cascade card-cascade-wider mb-5">
-					<img class="card-img-top" src="https://responsivemart.com/wp-content/uploads/img-1.jpg" alt="Card image cap">
+					<img 
+                        class="card-img-top"
+                        src="https://responsivemart.com/wp-content/uploads/img-1.jpg" 
+                        alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">Artigo Amor Exigente</h5>
-					    <p class="card-text">Todos os domingos temos a DomingueirAE, às 18h, horário de Brasília. No próximo encontro, você conhecerá um pouco mais sobre a maravilhosa equipe da CasAE, a sede da FEAE.</p>
-					    <a href="https://amorexigente.org.br/domingueirae/" class="card-link">Link Direto</a>
+					    <p class="card-text">
+                            Todos os domingos temos a DomingueirAE, às 18h, horário de Brasília. 
+                            No próximo encontro, você conhecerá um pouco mais sobre a maravilhosa equipe 
+                            da CasAE, a sede da FEAE.
+                        </p>
+					    <a href="https://amorexigente.org.br/domingueirae/" class="card-link">
+                            Link Direto
+                        </a>
 					</div>
 				</div>
 			</div>
@@ -60,7 +70,9 @@
 					<img class="card-img-top" src="https://responsivemart.com/wp-content/uploads/img-2.jpg" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">AE NO PROGRAMA VIDA MELHOR</h5>
-					    <p class="card-text">Quadro do Amor-Exigente que foi ao ar em 15/02/2021 no programa Vida Melhor, da Redevida.</p>
+					    <p class="card-text">
+                            Quadro do Amor-Exigente que foi ao ar em 15/02/2021 no programa Vida Melhor, 
+                            da Redevida.</p>
 					    <a href="https://amorexigente.org.br/ae-no-programa-vida-melhor-redevida-15-02-2021/" class="card-link">Link Direto</a>
 					</div>
 				</div>
@@ -70,7 +82,11 @@
 					<img class="card-img-top" src="https://responsivemart.com/wp-content/uploads/img-3.jpg" alt="Card image cap">
 					<div class="card-body">
 						<h5 class="card-title">DOMINGUEIRAE – CONSUMO PROBLEMÁTICO DE DROGAS</h5>
-					    <p class="card-text">DomingueirAE realizada no dia 14 de fevereiro, com o tema “Consumo problemático de drogas, uma interrupção de mudanças em curso”. Participação do psicoterapeuta Pável Modernell.</p>
+					    <p class="card-text">
+                            DomingueirAE realizada no dia 14 de fevereiro, com o tema “Consumo problemático
+                            de drogas, uma interrupção de mudanças em curso”. Participação do psicoterapeuta
+                            Pável Modernell.
+                        </p>
 					    <a href="https://amorexigente.org.br/domingueirae-consumo-problematico-de-drogas-uma-interrupcao-de-mudancas-em-curso/" class="card-link">Link Direto</a>
 					</div>
 				</div>
@@ -82,7 +98,11 @@
                     <img class="card-img-top" src="https://responsivemart.com/wp-content/uploads/img-4.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Artigo Amor Exigente</h5>
-                        <p class="card-text">Todos os domingos temos a DomingueirAE, às 18h, horário de Brasília. No próximo encontro, você conhecerá um pouco mais sobre a maravilhosa equipe da CasAE, a sede da FEAE.</p>
+                        <p class="card-text">
+                            Todos os domingos temos a DomingueirAE, às 18h, horário de Brasília. No próximo
+                            encontro, você conhecerá um pouco mais sobre a maravilhosa equipe da CasAE, 
+                            a sede da FEAE.
+                        </p>
                         <a href="https://amorexigente.org.br/domingueirae/" class="card-link">Link Direto</a>
                     </div>
                 </div>
